@@ -142,6 +142,72 @@ Change Theme
 <footer>
 © 2026 Deep | All Rights Reserved
 </footer>
+<style>
+.chatbox {
+  background: #171717;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
 
+#messages {
+  min-height: 80px;
+  margin: 15px 0;
+}
+
+#question {
+  padding: 12px;
+  width: 65%;
+  border-radius: 8px;
+}
+
+.chatbox button {
+  cursor: pointer;
+}
+</style>
+
+<div class="chatbox">
+  <h2>🤖 Deep AI Chatbot</h2>
+
+  <div id="messages">
+    Hello! Ask me something.
+  </div>
+
+  <input id="question"
+  placeholder="Type your question...">
+
+  <button onclick="reply()">Send</button>
+</div>
+
+<script>
+function reply() {
+  let q = document.getElementById("question")
+  .value.toLowerCase();
+
+  let answer = "Sorry, I don't know that yet!";
+
+  if(q.includes("hello") || q.includes("hi")) {
+    answer = "Hello! Welcome to Deep's Website!";
+  }
+  else if(q.includes("name")) {
+    answer = "My creator is Deep!";
+  }
+  else if(q.includes("business")) {
+    answer = "Business starts with a good idea!";
+  }
+  else if(q.includes("ai")) {
+    answer = "AI means Artificial Intelligence!";
+  }
+  else if(q.includes("coding")) {
+    answer = "Coding helps us create websites and apps!";
+  }
+
+  document.getElementById("messages").innerHTML =
+  "<b>You:</b> " + q +
+  "<br><br><b>Bot:</b> " + answer;
+
+  document.getElementById("question").value = "";
+}
+</script>
 </body>
 </html>
