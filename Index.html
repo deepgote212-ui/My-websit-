@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deep | Personal Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #080808;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 25px;
+  color: gold;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.profile {
+  margin-top: 40px;
+  animation: appear 2s;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: gold;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin: auto;
+}
+
+h1 {
+  color: gold;
+  font-size: 35px;
+}
+
+.card {
+  background: #171717;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+button {
+  background: gold;
+  color: black;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+footer {
+  padding: 30px;
+  color: gray;
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+.light .card {
+  background: #eeeeee;
+}
+</style>
+</head>
+
+<body>
+
+<header>DEEP'S WEBSITE</header>
+
+<div class="profile">
+
+<div class="avatar">D</div>
+
+<h1>Hello, I'm Deep</h1>
+
+<p>Future Entrepreneur | AI Learner | Developer</p>
+
+</div>
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>
+I am learning Artificial Intelligence,
+Technology and Business.
+My dream is to build my own company.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>My Skills</h2>
+
+<p>AI & Prompt Engineering</p>
+<p>Website Development</p>
+<p>Business & Technology</p>
+
+</div>
+
+<div class="card">
+
+<h2>My Goal</h2>
+
+<p>Learn new skills and build something amazing.</p>
+
+<button onclick="alert('Thanks for visiting!')">
+Contact Me
+</button>
+
+</div>
+
+<button onclick="document.body.classList.toggle('light')">
+Change Theme
+</button>
+
+<footer>
+© 2026 Deep | All Rights Reserved
+</footer>
+
+</body>
+</html>
