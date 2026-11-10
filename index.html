@@ -1,213 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Deep | Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep | Official Website</title>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial;
-  background: #080808;
-  color: white;
-  text-align: center;
+    background: #f4f8ff;
+    color: #172554;
 }
 
 header {
-  padding: 25px;
-  color: gold;
-  font-size: 25px;
-  font-weight: bold;
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px #0001;
 }
 
-.profile {
-  margin-top: 40px;
-  animation: appear 2s;
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2563eb;
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: gold;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: bold;
-  margin: auto;
+nav a {
+    text-decoration: none;
+    color: #172554;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
-h1 {
-  color: gold;
-  font-size: 35px;
+.hero {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #dbeafe, #ffffff);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #475569;
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .card {
-  background: #171717;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 5px 20px #0001;
 }
 
-button {
-  background: gold;
-  color: black;
-  padding: 14px 25px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  margin: 10px;
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
 }
 
-button:hover {
-  transform: scale(1.08);
+.card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.about {
+    background: white;
 }
 
 footer {
-  padding: 30px;
-  color: gray;
+    background: #172554;
+    color: white;
+    padding: 25px;
+    text-align: center;
 }
 
-@keyframes appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-.light {
-  background: white;
-  color: black;
-}
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
 
-.light .card {
-  background: #eeeeee;
+    .hero h1 {
+        font-size: 32px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>DEEP'S WEBSITE</header>
+<header>
+    <div class="logo">DEEP.</div>
 
-<div class="profile">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<div class="avatar">D</div>
+<div class="hero" id="home">
+    <h1>Welcome to <span>My Website</span></h1>
 
-<h1>Hello, I'm Deep</h1>
+    <p>
+        Explore Technology, Innovation and Creativity.
+        Building ideas into reality with modern technology.
+    </p>
 
-<p>Future Entrepreneur | AI Learner | Developer</p>
-
+    <a href="#about" class="btn">Explore More</a>
 </div>
 
-<div class="card">
+<section id="about" class="about">
+    <h2>About Me</h2>
 
-<h2>About Me</h2>
+    <p>
+        Hello! I am Deep.
+        I am learning technology, coding and artificial intelligence.
+        This is my personal website.
+    </p>
+</section>
 
-<p>
-I am learning Artificial Intelligence,
-Technology and Business.
-My dream is to build my own company.
-</p>
+<section id="services">
+    <h2>What I Explore</h2>
 
-</div>
+    <div class="cards">
 
-<div class="card">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Creating modern and responsive websites.</p>
+        </div>
 
-<h2>My Skills</h2>
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring the future of AI technology.</p>
+        </div>
 
-<p>AI & Prompt Engineering</p>
-<p>Website Development</p>
-<p>Business & Technology</p>
+        <div class="card">
+            <h3>Innovation</h3>
+            <p>Learning new skills and building new ideas.</p>
+        </div>
 
-</div>
+    </div>
+</section>
 
-<div class="card">
-
-<h2>My Goal</h2>
-
-<p>Learn new skills and build something amazing.</p>
-
-<button onclick="alert('Thanks for visiting!')">
-Contact Me
-</button>
-
-</div>
-
-<button onclick="document.body.classList.toggle('light')">
-Change Theme
-</button>
+<section id="contact" class="about">
+    <h2>Contact Me</h2>
+    <p>Welcome to my digital world!</p>
+</section>
 
 <footer>
-© 2026 Deep | All Rights Reserved
+    <p>© 2026 Deep | All Rights Reserved</p>
 </footer>
-<style>
-.chatbox {
-  background: #171717;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 15px;
-}
 
-#messages {
-  min-height: 80px;
-  margin: 15px 0;
-}
-
-#question {
-  padding: 12px;
-  width: 65%;
-  border-radius: 8px;
-}
-
-.chatbox button {
-  cursor: pointer;
-}
-</style>
-
-<div class="chatbox">
-  <h2>🤖 Deep AI Chatbot</h2>
-
-  <div id="messages">
-    Hello! Ask me something.
-  </div>
-
-  <input id="question"
-  placeholder="Type your question...">
-
-  <button onclick="reply()">Send</button>
-</div>
-
-<script>
-function reply() {
-  let q = document.getElementById("question")
-  .value.toLowerCase();
-
-  let answer = "Sorry, I don't know that yet!";
-
-  if(q.includes("hello") || q.includes("hi")) {
-    answer = "Hello! Welcome to Deep's Website!";
-  }
-  else if(q.includes("name")) {
-    answer = "My creator is Deep!";
-  }
-  else if(q.includes("business")) {
-    answer = "Business starts with a good idea!";
-  }
-  else if(q.includes("ai")) {
-    answer = "AI means Artificial Intelligence!";
-  }
-  else if(q.includes("coding")) {
-    answer = "Coding helps us create websites and apps!";
-  }
-
-  document.getElementById("messages").innerHTML =
-  "<b>You:</b> " + q +
-  "<br><br><b>Bot:</b> " + answer;
-
-  document.getElementById("question").value = "";
-}
-</script>
 </body>
 </html>
