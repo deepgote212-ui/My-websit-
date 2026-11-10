@@ -202,8 +202,28 @@ footer {
 
 <section id="contact" class="about">
     <h2>Contact Me</h2>
-    <p>Welcome to my digital world!</p>
-</section>
+
+    <p>Let's Connect With Each Other!</p>
+
+    <form onsubmit="event.preventDefault(); alert('Thank you for contacting me!');"
+    style="max-width:450px; margin:30px auto;">
+
+        <input type="text" placeholder="Your Name" required
+        style="width:100%; padding:15px; margin:10px 0;">
+
+        <input type="email" placeholder="Your Email" required
+        style="width:100%; padding:15px; margin:10px 0;">
+
+        <textarea placeholder="Your Message" required
+        style="width:100%; padding:15px; margin:10px 0; height:120px;"></textarea>
+
+        <button type="submit"
+        style="background:#2563eb; color:white; padding:15px 30px; border:0; border-radius:8px;">
+        Send Message
+        </button>
+
+    </form>
+    </section>
 
 <footer>
     <p>© 2026 Deep | All Rights Reserved</p>
