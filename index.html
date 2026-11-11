@@ -1,6 +1,20 @@
 <!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8">.profile-photo {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #60a5fa;
+    box-shadow: 0 0 30px #7c3aed;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-12px);
+    }
+}
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Deep | Personal Portfolio</title><style>
 * {
     margin: 0;
